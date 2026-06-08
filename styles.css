@@ -324,10 +324,13 @@ h3 {
   align-items: start;
 }
 
+.section-head > p {
+  margin-top: 34px;
+}
+
 .intro-grid p,
 .section-head p,
 .feature-copy p,
-.menu-card p,
 .footer small {
   color: var(--muted);
   line-height: 1.9;
@@ -461,60 +464,6 @@ h3 {
 .feature-copy p {
   color: rgba(255, 255, 255, 0.78);
   max-width: 520px;
-}
-
-.text-link {
-  width: fit-content;
-  margin-top: 14px;
-  padding-bottom: 6px;
-  border-bottom: 1px solid currentColor;
-  font-weight: 800;
-}
-
-.menu {
-  background: var(--paper);
-}
-
-.menu-grid {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 18px;
-  margin-top: 38px;
-}
-
-.menu-card {
-  overflow: hidden;
-  border-radius: 8px;
-  background: var(--white);
-  box-shadow: 0 1px 0 rgba(56, 39, 27, 0.1);
-}
-
-.menu-card img {
-  width: 100%;
-  aspect-ratio: 4 / 5;
-  object-fit: cover;
-}
-
-.menu-card div {
-  padding: 20px;
-}
-
-.menu-card span {
-  display: block;
-  margin-bottom: 8px;
-  color: var(--tomato);
-  font-size: 12px;
-  font-weight: 800;
-  text-transform: uppercase;
-}
-
-.menu-card h3 {
-  font-size: 20px;
-}
-
-.menu-card p {
-  margin-bottom: 0;
-  font-size: 14px;
 }
 
 .gallery {
@@ -657,13 +606,16 @@ h3 {
     grid-template-rows: 220px 220px;
   }
 
-  .time-grid,
-  .menu-grid {
+  .time-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .photo-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .section-head > p {
+    margin-top: 0;
   }
 
   .feature-image img {
@@ -705,8 +657,7 @@ h3 {
     grid-row: auto;
   }
 
-  .time-grid,
-  .menu-grid {
+  .time-grid {
     grid-template-columns: 1fr;
   }
 
