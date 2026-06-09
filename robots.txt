@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://osweetsweetsweet-source.github.io/unity-cafe/sitemap.xml
+Sitemap: https://unitycafe.net/sitemap.xml
